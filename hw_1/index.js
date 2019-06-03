@@ -57,7 +57,7 @@ console.log(flatten([1, [2, 3], 4, 5]));
  * метод должен убрать все повторяющиеся элементы из массива
  */
 function uniq(array) {
-  const set = new Set(array.map(item => item));
+  const set = new Set(array);
 
   return [...set];
 }
